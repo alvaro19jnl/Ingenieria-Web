@@ -13,7 +13,11 @@
 <body>
     <div class="card">
     <form action="index.php" method="POST">
-       
+        <?php
+            if(isset($errorLogin)){
+                echo $errorLogin;
+            }
+        ?>
         <h2>Iniciar sesión</h2>
         <p>Nombre de usuario: <br>
         <input type="text" name="username"></p>
